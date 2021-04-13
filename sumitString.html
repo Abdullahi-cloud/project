@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const word = prompt('');
+    const arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
+      'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
+      'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+    ];
+    let answer = 0;
+
+    function equalToOne(a, b) {
+      return b - a;
+    }
+
+    function sumString() {
+      for (let i = 0; i < word.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+          if (arr[j] === word[i]) {
+            alert(true);
+          } else {
+            alert(false);
+          }
+        }
+      }
+    }
+    sumString(equalToOne);
+  </script>
+</body>
+
+</html>
